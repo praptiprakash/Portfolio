@@ -1,0 +1,336 @@
+body {
+  background: rgb(25, 25, 26);
+  font-family: "Poppins", sans-serif;
+}
+
+/* navigation bar */
+.navbar {
+  border: 2px solid #50c878;
+  border-radius: 13px;
+  background-color: black;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* navbar prapti */
+#prapti {
+  color: white;
+  font-weight: bolder;
+}
+
+/* navbar links */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #50c878;
+}
+
+.nav-left {
+  flex: 1;
+  text-align: left;
+}
+
+.nav-right {
+  display: flex;
+  gap: 30px;
+}
+
+/* section 1 */
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 700px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+/* items inside container */
+.fitem {
+  height: 500px;
+  width: 600px;
+}
+
+/* home content */
+#item-1 {
+  flex-grow: 2;
+  padding-left: 180px;
+  padding-right: 90px;
+  padding-top: 150px;
+}
+
+/* first image */
+#item-2 {
+  padding-bottom: 200px;
+}
+
+/* heading line */
+.name {
+  color: white;
+  font-size: 60px;
+}
+
+/* name in heading line */
+.color-text {
+  color: #50c878;
+}
+
+/* content color */
+.content {
+  color: rgb(207, 202, 202);
+  font-size: 20px;
+}
+
+/* all headings */
+.heading {
+  border: 1px solid #50c87842;
+  font-size: 35px;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.219);
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+/* skillset icons */
+.icons {
+  display: flex;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.11);
+  margin-top: 80px;
+  border: 1px solid #50c8780e;
+  margin: auto;
+  width: fit-content;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* learn paragraph */
+.learn {
+  color: rgb(207, 202, 202);
+  font-size: 20px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.img-2 {
+  text-align: center;
+}
+
+/* contact page */
+.contact {
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+  border: 1px solid #50c87842;
+  font-size: 35px;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  border-radius: 8px;
+  background-color: black;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-top: 150px;
+  justify-items: center;
+}
+
+/* last line */
+#last {
+  font-weight: lighter;
+  font-size: 16px;
+  color: rgb(207, 202, 202);
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+/* media query */
+@media (max-width: 480px) {
+  body {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  /* Navigation bar adjustments */
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+  }
+
+  /* Nav-right adjustments */
+  .nav-right {
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    z-index: 9999;
+
+  }
+
+  /* Container adjustments */
+  .container {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .content{
+    font-size: 16px;
+  }
+
+  /* Item adjustments */
+  .fitem {
+    height: auto;
+    width: 100%;
+  }
+
+  #item-1 {
+    padding-top: 250px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 21px;
+  }
+
+  /* Heading adjustments */
+  .name {
+    font-size: 40px;
+  }
+
+  /* Skillset adjustments */
+  .icons {
+    padding: 20px;
+  }
+
+  .logo{
+    height: 60px;
+  }
+
+  /* Learn paragraph adjustments */
+  .learn {
+    padding-top: 50px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  /* Contact adjustments */
+  .contact {
+    padding: 20px;
+  }
+
+  /* Images adjustments */
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  /* Navigation bar adjustments */
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-right {
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+  }
+
+  /* Container adjustments */
+  .container {
+    text-align: center;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+  }
+
+  /* Item adjustments */
+  .fitem {
+    height: auto;
+    width: 100%;
+  }
+
+  #item-1 {
+    padding-top: 250px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Heading adjustments */
+  .name {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  /* Skillset adjustments */
+  .icons {
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+  }
+
+  /* Learn paragraph adjustments */
+  .learn {
+    padding-top: 50px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  /* Contact adjustments */
+  .contact {
+    grid-template-rows: auto 1fr auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Images adjustments */
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    flex-direction: row;
+    height: auto;
+    justify-content: center;
+  }
+
+  #item-1 {
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 80px;
+  }
+
+  #item-2{
+    height: auto;
+    width: auto;
+  }
+
+}
